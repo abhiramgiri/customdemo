@@ -4,6 +4,7 @@ import com.vaadin.annotations.Theme;
 import org.asi.ui.custom.demo.ExtFilteringTableDemo;
 import org.asi.ui.custom.demo.CustomWindowDemo;
 import org.asi.ui.custom.demo.CustomTextFieldDemo;
+import org.asi.ui.custom.demo.CustomCheckBoxDemo;
 import org.asi.ui.custom.demo.CustomMenuBarDemo;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.navigator.Navigator;
@@ -28,6 +29,7 @@ public class CustomUI extends UI
         navigator=new Navigator(this, this);
         navigator.addView(Custom.NAME, new Custom());
         navigator.addView(CustomWindowDemo.NAME, new CustomWindowDemo());
+        navigator.addView(CustomCheckBoxDemo.NAME, new CustomCheckBoxDemo());
         navigator.addView(CustomTextFieldDemo.NAME, new CustomTextFieldDemo());
         navigator.addView(CustomMenuBarDemo.NAME, new CustomMenuBarDemo());
         navigator.addView(ExtFilteringTableDemo.NAME, new ExtFilteringTableDemo());
