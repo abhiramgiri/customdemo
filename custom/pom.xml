@@ -58,6 +58,11 @@
 			<artifactId>customtextfield</artifactId>
 			<version>1.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.asi.ui</groupId>
+			<artifactId>customcheckbox</artifactId>
+			<version>1.0</version>
+		</dependency>
                 <dependency>
             <groupId>org.asi.ui</groupId>
             <artifactId>extfilteringtable</artifactId>
