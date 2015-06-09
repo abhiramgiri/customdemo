@@ -31,6 +31,8 @@
 
 
     <inherits name="org.asi.ui.customtextfield.CustomTextFieldWidgetSet" />
+    
+    <inherits name="org.asi.ui.customcheckbox.CustomCheckBoxWidgetSet" />
 
     <inherits name="org.asi.ui.customwindow.CustomWindowWidgetSet" />
 
