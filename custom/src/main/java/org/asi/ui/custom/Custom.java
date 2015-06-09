@@ -3,6 +3,7 @@ package org.asi.ui.custom;
 import org.asi.ui.custom.demo.ExtFilteringTableDemo;
 import org.asi.ui.custom.demo.CustomWindowDemo;
 import org.asi.ui.custom.demo.CustomTextFieldDemo;
+import org.asi.ui.custom.demo.CustomCheckBoxDemo;
 import org.asi.ui.custom.demo.CustomMenuBarDemo;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
@@ -28,6 +29,7 @@ public class Custom extends VerticalLayout implements View{
     
     private void init() {
         Button x=new Button("Custom Window Demo");
+        Button x1=new Button("Custom CheckBox Demo");
         Button y=new Button("Custom TextField Demo");
         Button z=new Button("Custom MenuBar Demo");
         Button a=new Button("Ext Filtering Table Demo");
@@ -40,6 +42,16 @@ public class Custom extends VerticalLayout implements View{
             public void buttonClick(Button.ClickEvent event) {
                 
                 getUI().getNavigator().navigateTo(CustomWindowDemo.NAME);
+            }
+        });
+        addComponent(x1);
+        setComponentAlignment(x1, Alignment.MIDDLE_CENTER);
+        x1.addClickListener(new Button.ClickListener() {
+
+            @Override
+            public void buttonClick(Button.ClickEvent event) {
+                
+                getUI().getNavigator().navigateTo(CustomCheckBoxDemo.NAME);
             }
         });
         addComponent(y);
